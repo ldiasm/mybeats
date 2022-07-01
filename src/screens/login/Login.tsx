@@ -18,7 +18,9 @@ export default class Login extends React.Component<Props> {
           resizeMode={'cover'}>
           <View style={styles.textView}>
             <Text style={styles.titleText}>{'MyBeats'}</Text>
-            <Text style={styles.titleText2}>{'Headphones'}</Text>
+            <Text style={styles.titleText2}>
+              {'Especializados em fones para deejays'}
+            </Text>
           </View>
           <LoginForm navigation={this.props.navigation} />
         </ImageBackground>
@@ -36,10 +38,10 @@ const styles = StyleSheet.create({
   },
   textView: {
     flex: 1,
-    flexDirection: 'row',
-    alignSelf: 'flex-start',
-    left: 16,
-    top: 210,
+    flexDirection: 'column',
+    alignSelf: 'center',
+    alignItems: 'center',
+    top: 64,
   },
   titleText: {
     fontSize: 36,
@@ -47,11 +49,9 @@ const styles = StyleSheet.create({
     color: colors.white,
   },
   titleText2: {
-    fontSize: 28,
+    fontSize: 14,
     lineHeight: 40,
     fontWeight: '300',
     color: colors.white,
-    left: 16,
-    top: 6,
   },
 });

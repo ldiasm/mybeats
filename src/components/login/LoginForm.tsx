@@ -34,10 +34,12 @@ export default class LoginForm extends React.Component<Props> {
               secureTextEntry
             />
           </View>
-          <View style={styles.inputBox2TetrisColumn2}>
-            <LoginFormButton navigation={this.props.navigation} />
-          </View>
+          <LoginFormButton navigation={this.props.navigation} />
         </View>
+        <Text style={styles.buttonArea}>
+          {'Ainda não é cadastrado? '}
+          {<Text style={styles.link}>Inscrever-se</Text>}
+        </Text>
       </View>
     );
   }
@@ -94,5 +96,20 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     height: 24,
     fontWeight: '400',
+  },
+  buttonArea: {
+    justifyContent: 'center',
+    alignSelf: 'center',
+    fontSize: 12,
+    lineHeight: 16,
+    height: 16,
+    fontWeight: '400',
+    color: colors.white,
+  },
+  link: {
+    fontSize: 12,
+    lineHeight: 16,
+    fontWeight: '400',
+    color: colors.blue600,
   },
 });
