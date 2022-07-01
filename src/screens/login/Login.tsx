@@ -54,4 +54,5 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     color: colors.white,
   },
+  buttonsArea: {},
 });

@@ -34,8 +34,8 @@ export default class LoginForm extends React.Component<Props> {
               secureTextEntry
             />
           </View>
-          <LoginFormButton navigation={this.props.navigation} />
         </View>
+        <LoginFormButton navigation={this.props.navigation} />
         <Text style={styles.buttonArea}>
           {'Ainda não é cadastrado? '}
           {<Text style={styles.link}>Inscrever-se</Text>}
@@ -110,6 +110,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     lineHeight: 16,
     fontWeight: '400',
-    color: colors.blue600,
+    color: '#70EFDE',
   },
 });

@@ -38,8 +38,8 @@ export default class LoginFormButton extends React.Component<Props> {
 
   render() {
     return (
-      <View style={styles.buttonViewInPasswordBox}>
-        <Button title="Entrar" onPress={this.fakeLogin} />
+      <View style={styles.justButton}>
+        <Button color="#FFF" title="Entrar" onPress={this.fakeLogin} />
       </View>
     );
   }
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   buttonInPasswordBox: {
     width: 85,
     height: 36,
-    backgroundColor: colors.white,
+    backgroundColor: colors.purple,
     borderRadius: 44,
   },
   buttonTextInPasswordBox: {
@@ -64,5 +64,14 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 20,
     color: colors.purple,
+  },
+  justButton: {
+    alignItems: 'center',
+    alignContent: 'center',
+    alignSelf: 'center',
+    width: 326,
+    height: 50,
+    backgroundColor: colors.purple,
+    borderRadius: 25,
   },
 });
